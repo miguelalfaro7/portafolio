@@ -42,8 +42,8 @@ export function Hero() {
 
             <div className="flex flex-col items-center justify-center gap-4 pt-8 sm:flex-row lg:justify-start">
               <a
-                href="/HOJA-DE-VIDA-MIGUEL-ALFARO.docx"
-                download="HOJA-DE-VIDA-MIGUEL-ALFARO.docx"
+                href="/HOJA-DE-VIDA-MIGUEL-ALFARO.pdf"
+                download="HOJA-DE-VIDA-MIGUEL-ALFARO.pdf"
                 className="group flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 via-sky-600 to-teal-500 px-8 py-4 font-semibold text-white shadow-lg shadow-blue-200/70 transition-all duration-300 hover:scale-105"
               >
                 <Download className="h-5 w-5 group-hover:animate-bounce" />
