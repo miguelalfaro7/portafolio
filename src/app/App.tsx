@@ -12,7 +12,7 @@ import { Testimonials } from './components/Testimonials';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[radial-gradient(circle_at_top,#f4f9ff_0%,#ebf5ff_35%,#eefcf9_68%,#ffffff_100%)] text-slate-900">
+    <div className="min-h-screen bg-[radial-gradient(circle_at_top,#f4f9ff_0%,#ebf5ff_35%,#eefcf9_68%,#ffffff_100%)] text-slate-900 transition-colors duration-300 dark:bg-[radial-gradient(circle_at_top,#0f172a_0%,#111827_38%,#0b1120_68%,#020617_100%)] dark:text-slate-100">
       <Navbar />
       <main>
         <Hero />
