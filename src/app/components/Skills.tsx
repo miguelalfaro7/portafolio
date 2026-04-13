@@ -110,12 +110,21 @@ export function Skills() {
                   key={index}
                   className="rounded-2xl border border-blue-100 bg-white/90 p-5 text-center shadow-lg shadow-blue-100/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
                 >
-                  <div className={`mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-2xl ${skill.iconBg} ${skill.accent}`}>
+                  <div
+                    className={`mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-2xl ${skill.iconBg} ${skill.accent}`}
+                  >
                     {skill.icon}
                   </div>
                   <p className="text-sm font-semibold text-slate-700">{skill.name}</p>
                 </div>
               ))}
+            </div>
+
+            <div className="rounded-2xl border border-sky-200 bg-gradient-to-br from-blue-50 to-teal-50 p-6">
+              <p className="text-sm leading-relaxed text-slate-600">
+                <span className="font-semibold text-blue-700">Siempre aprendiendo:</span> Cada proyecto
+                me ayuda a practicar, mejorar y descubrir nuevas herramientas.
+              </p>
             </div>
           </div>
 
@@ -132,7 +141,9 @@ export function Skills() {
                   className={`rounded-2xl border ${skill.border} bg-white/85 p-6 shadow-lg ${skill.shadow} transition-all duration-300 hover:scale-105`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 items-center justify-center rounded-lg ${skill.iconBg} ${skill.accent}`}>
+                    <div
+                      className={`flex h-12 w-12 items-center justify-center rounded-lg ${skill.iconBg} ${skill.accent}`}
+                    >
                       {skill.icon}
                     </div>
                     <div>
@@ -142,13 +153,6 @@ export function Skills() {
                   </div>
                 </div>
               ))}
-            </div>
-
-            <div className="mt-8 rounded-2xl border border-sky-200 bg-gradient-to-br from-blue-50 to-teal-50 p-6">
-              <p className="text-sm leading-relaxed text-slate-600">
-                <span className="font-semibold text-blue-700">Siempre aprendiendo:</span> Cada proyecto
-                me ayuda a practicar, mejorar y descubrir nuevas herramientas.
-              </p>
             </div>
           </div>
         </div>

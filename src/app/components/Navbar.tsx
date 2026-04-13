@@ -11,6 +11,7 @@ export function Navbar() {
     { id: 'about', label: 'Sobre mí' },
     { id: 'skills', label: 'Habilidades' },
     { id: 'projects', label: 'Proyectos' },
+    { id: 'testimonials', label: 'Testimonios' },
     { id: 'education', label: 'Educación' },
     { id: 'contact', label: 'Contacto' },
   ];

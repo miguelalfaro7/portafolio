@@ -19,6 +19,8 @@ export function Projects() {
       image:
         'https://images.unsplash.com/photo-1762340275085-31075ff58039?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjb2RpbmclMjBsYXB0b3AlMjBkYXJrfGVufDF8fHx8MTc3NTQ4ODg0Mnww&ixlib=rb-4.1.0&q=80&w=1080',
       technologies: ['React', 'Tailwind CSS', 'TypeScript'],
+      githubLink: 'https://github.com/miguelalfaro7/portafolio',
+      liveLink: '#',
     },
     {
       title: 'Sistema de Gestión CRUD',
@@ -27,6 +29,8 @@ export function Projects() {
       image:
         'https://images.unsplash.com/photo-1637937459053-c788742455be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHNjcmVlbiUyMGNvZGV8ZW58MXx8fHwxNzc1NDg4ODQyfDA&ixlib=rb-4.1.0&q=80&w=1080',
       technologies: ['JavaScript', 'HTML', 'CSS', 'Node.js'],
+      liveLink: '#',
+      githubLink: 'https://github.com/miguelalfaro7',
     },
     {
       title: 'Proyecto con Django',
@@ -35,6 +39,8 @@ export function Projects() {
       image:
         'https://images.unsplash.com/photo-1580121441575-41bcb5c6b47c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkamFuZ28lMjBweXRob24lMjBwcm9ncmFtbWluZ3xlbnwxfHx8fDE3NzU0ODg4NDN8MA&ixlib=rb-4.1.0&q=80&w=1080',
       technologies: ['Django', 'Python', 'PostgreSQL', 'REST API'],
+      liveLink: '#',
+      githubLink: 'https://github.com/miguelalfaro7',
     },
   ];
 
@@ -45,7 +51,7 @@ export function Projects() {
           <h2 className="mb-4 text-4xl font-bold text-slate-900 md:text-5xl">
             Mis <span className="text-blue-700">Proyectos</span>
           </h2>
-          <div className="mx-auto mb-4 h-1 w-20 bg-gradient-to-r from-violet-500 via-blue-500 to-amber-400"></div>
+          <div className="mx-auto mb-4 h-1 w-20 bg-gradient-to-r from-blue-500 via-sky-500 to-teal-400"></div>
           <p className="mx-auto max-w-2xl text-slate-500">
             Una selección de proyectos en los que he trabajado, demostrando mis habilidades
             técnicas y creatividad.
@@ -56,7 +62,7 @@ export function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group overflow-hidden rounded-2xl border border-violet-200 bg-white/90 shadow-lg shadow-violet-100/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-violet-200/60"
+              className="group overflow-hidden rounded-2xl border border-blue-200 bg-white/90 shadow-lg shadow-blue-100/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-200/60"
             >
               <div className="relative h-48 overflow-hidden">
                 <ImageWithFallback
@@ -68,7 +74,7 @@ export function Projects() {
               </div>
 
               <div className="space-y-4 p-6">
-                <h3 className="text-xl font-bold text-slate-900 transition-colors group-hover:text-violet-700">
+                <h3 className="text-xl font-bold text-slate-900 transition-colors group-hover:text-blue-700">
                   {project.title}
                 </h3>
                 <p className="text-sm leading-relaxed text-slate-500">{project.description}</p>
@@ -77,7 +83,7 @@ export function Projects() {
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="rounded-full border border-violet-200 bg-violet-50 px-3 py-1 text-xs font-medium text-violet-700"
+                      className="rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700"
                     >
                       {tech}
                     </span>
@@ -85,13 +91,23 @@ export function Projects() {
                 </div>
 
                 <div className="flex gap-3 pt-4">
-                  <button className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 via-blue-600 to-amber-500 px-4 py-2 font-medium text-white transition-colors">
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 via-sky-600 to-teal-500 px-4 py-2 font-medium text-white transition-all duration-300 hover:scale-[1.02]"
+                  >
                     <ExternalLink className="h-4 w-4" />
                     Ver proyecto
-                  </button>
-                  <button className="flex items-center justify-center rounded-xl bg-slate-100 px-4 py-2 text-slate-700 transition-colors hover:bg-slate-200">
+                  </a>
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center rounded-xl bg-gradient-to-r from-blue-600 via-sky-600 to-teal-500 px-4 py-2 text-white transition-all duration-300 hover:scale-[1.02]"
+                  >
                     <Github className="h-4 w-4" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

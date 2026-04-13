@@ -28,6 +28,9 @@ export function Footer() {
               <a href="#projects" className="block text-sm text-slate-500 transition-colors hover:text-blue-700">
                 Proyectos
               </a>
+              <a href="#testimonials" className="block text-sm text-slate-500 transition-colors hover:text-blue-700">
+                Testimonios
+              </a>
               <a href="#contact" className="block text-sm text-slate-500 transition-colors hover:text-blue-700">
                 Contacto
               </a>

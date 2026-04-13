@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Download, Mail, MapPin } from 'lucide-react';
 
 export function Hero() {
@@ -55,8 +56,15 @@ export function Hero() {
 
           <div className="mx-auto w-full max-w-sm">
             <div className="rounded-[2rem] border border-blue-200/80 bg-white/80 p-5 shadow-2xl shadow-blue-100/70 backdrop-blur">
-              <div className="flex aspect-[4/5] items-center justify-center rounded-[1.6rem] border-2 border-dashed border-blue-300 bg-gradient-to-br from-blue-50 via-sky-50 to-teal-50 text-center">
-                <h3 className="text-2xl font-semibold text-slate-700">Foto</h3>
+              <div className="relative aspect-[4/5] overflow-hidden rounded-[1.6rem] border-2 border-blue-200 bg-gradient-to-br from-blue-50 via-sky-50 to-teal-50">
+                <Image
+                  src="/foto-perfil.png"
+                  alt="Foto de perfil de Miguel Felipe Alfaro Caicedo"
+                  fill
+                  priority
+                  className="object-cover object-[center_20%]"
+                  sizes="(max-width: 1024px) 320px, 380px"
+                />
               </div>
             </div>
           </div>
